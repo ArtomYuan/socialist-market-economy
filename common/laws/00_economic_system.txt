@@ -778,7 +778,7 @@ law_socialist_market_economy = {
 		state_capitalists_investment_pool_efficiency_mult = 0.45
 		country_private_construction_allocation_mult = 0.85
 		country_government_dividends_reinvestment_add = 1.0		
-		country_max_companies_add = 1
+		country_max_companies_add = 10
 
 		country_disable_nationalization_without_compensation_bool = yes
 	}
