@@ -6,3 +6,7 @@ l_simp_chinese:
   #Economic System group
     law_socialist_market_economy: "社会主义市场经济"
     law_socialist_market_economy_desc: "社会主义市场经济是社会主义经济制度与市场经济相结合的经济运行方式"
+
+  #Distribution of Power group
+    law_national_people_congress: "全国人民代表大会"
+    law_national_people_congress_desc: "全国人民代表大会和全国人民代表大会常务委员会行使国家立法权。"
