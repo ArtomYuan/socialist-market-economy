@@ -6,7 +6,7 @@ gov_papal_commune = {
 	
 	possible = {
 		has_law = law_type:law_council_republic
-		has_law = law_type:law_socialist_market_economy
+		has_law = law_type:law_people_congresses
 		has_law = law_type:law_state_religion
 		exists = c:PAP
 		c:PAP = ROOT
@@ -28,7 +28,7 @@ gov_soviet_dictatorship = {
 	
 	possible = {
 		has_law = law_type:law_council_republic
-		has_law = law_type:law_socialist_market_economy
+		has_law = law_type:law_people_congresses
 
 		OR = {
 			has_law = law_type:law_autocracy
@@ -56,7 +56,7 @@ gov_soviet_single_party_state = {
 	
 	possible = {
 		has_law = law_type:law_council_republic
-		has_law = law_type:law_socialist_market_economy
+		has_law = law_type:law_people_congresses
 		has_law = law_type:law_single_party_state
 		OR = {
 			root.capital.region = sr:region_russia
@@ -81,7 +81,7 @@ gov_soviet_republic = {
 	
 	possible = {
 		has_law = law_type:law_council_republic
-		has_law = law_type:law_socialist_market_economy
+		has_law = law_type:law_people_congresses
 		country_has_voting_franchise = yes
 		NOT = { 
 			has_law = law_type:law_single_party_state
@@ -131,7 +131,7 @@ gov_phalanstere = {
 	possible = {
 		country_has_primary_culture = cu:french
 		has_law = law_type:law_council_republic
-		has_law = law_type:law_socialist_market_economy
+		has_law = law_type:law_people_congresses
 		has_law = law_type:law_technocracy
 	}
 
@@ -151,7 +151,7 @@ gov_cybernetic_state = {
 	
 	possible = {
 		has_law = law_type:law_council_republic
-		has_law = law_type:law_socialist_market_economy
+		has_law = law_type:law_people_congresses
 		has_law = law_type:law_technocracy
 	}
 
@@ -171,7 +171,7 @@ gov_council_single_party_state = {
 	
 	possible = {
 		has_law = law_type:law_council_republic
-		has_law = law_type:law_socialist_market_economy
+		has_law = law_type:law_people_congresses
 		has_law = law_type:law_single_party_state
 	}
 
@@ -192,7 +192,7 @@ gov_council_republic = {
 	
 	possible = {
 		has_law = law_type:law_council_republic
-		has_law = law_type:law_socialist_market_economy
+		has_law = law_type:law_people_congresses
 		country_has_voting_franchise = yes
 		NOT = { 
 			has_law = law_type:law_single_party_state
@@ -216,7 +216,7 @@ gov_anarchist_commune = {
 	
 	possible = {
 		has_law = law_type:law_council_republic
-		has_law = law_type:law_socialist_market_economy
+		has_law = law_type:law_people_congresses
 		has_law = law_type:law_anarchy
 	}
 
