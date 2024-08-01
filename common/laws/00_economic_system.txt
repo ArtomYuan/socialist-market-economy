@@ -760,7 +760,7 @@ law_socialist_market_economy = {
 	
 	icon = "gfx/interface/icons/law_icons/cooperative_ownership.dds"
 	
-	progressiveness = 200
+	progressiveness = 100
 	
 	disallowing_laws = {
 		law_serfdom
@@ -814,4 +814,33 @@ law_socialist_market_economy = {
 			}
 		}
 	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+		
+		if = {
+			limit = { 
+				has_law = law_type:law_council_republic
+			}
+			add = 250
+		}
+	}
+	
+	ai_impose_chance = {
+		value = 0
+		
+		if = {
+			limit = {
+				has_law = law_type:law_cooperative_ownership			
+			}
+			
+			add = base_impose_law_weight
+			multiply = 10.0
+		}
+	}	
 }
