@@ -767,8 +767,8 @@ law_socialist_market_economy = {
 	}
 	
 	unlocking_laws = {
-		law_people_congresses
-		law_council_republic			
+		law_council_republic
+		law_people_congresses			
 	}
 	
 	on_activate = {		
@@ -777,42 +777,17 @@ law_socialist_market_economy = {
 		}	
 	}
 	
-    modifier = {
+	modifier = {
         country_loan_interest_rate_mult = -0.25
         state_shopkeepers_investment_pool_efficiency_mult = 0.45    
         state_capitalists_investment_pool_efficiency_mult = 0.45
+		state_farmers_investment_pool_efficiency_mult = 0.25
         country_private_construction_allocation_mult = 0.85
         country_government_dividends_reinvestment_add = 1.0        
         country_max_companies_add = 10
 
-        country_disable_nationalization_without_compensation_bool = yes
-    }
-    
-    possible_political_movements = {
-        law_interventionism
-        law_command_economy
-        law_agrarianism
-        law_cooperative_ownership
-        law_industry_banned
-    }
-
-	pop_support = {
-		value = 0
-		add = {
-			desc = "POP_CAPITALISTS"			
-			if = {
-				limit = {
-					owner = {
-						OR = { 
-							has_law = law_type:law_agrarianism 
-							has_law = law_type:law_traditionalism 
-						}
-					}
-					is_pop_type = capitalists
-				}
-				value = 0.5
-			}
-		}
+		country_disable_nationalization_without_compensation_bool = yes
+		country_force_collectivization_bool = yes
 	}
 
 	ai_enact_weight_modifier = { #Petitions
